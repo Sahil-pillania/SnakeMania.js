@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+}
+.body{
+    background: url(../bg-image/1.png.png);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board {
+    position: absolute;
+    left: 120px;
+    background: linear-gradient(rgb(40, 210, 240), rgb(250, 241, 216));
+    width: 90vmin;
+    height: 90vmin;
+    border: 6px outset;
+    display: grid;
+    grid-template-columns:repeat(18,1fr) ;
+    grid-template-rows: repeat(18,1fr);
+    float: left;
+}
+.head {
+    background:linear-gradient(rgb(245, 2, 2), yellow);
+    border: .25vmin solid black;
+    border-radius: 9px;
+    transform:scale(1.15) ;
+}
+
+
+.food{
+    background: linear-gradient(rgb(4, 255, 46), rgb(70, 179, 70));
+    border: .25vmin solid  black;
+    border-radius: 16px;
+}
+.snake{
+    background: radial-gradient(purple, maroon) ;
+    border: .25vmin solid black;
+    border-radius: 10px;
+}
+#scoreBox {
+    position: absolute;
+    top:80px;
+    right: 152px;
+    font-size: 39px;
+    font-family: 'Bungee Shade', cursive;
+    
+}
+#hiscoreBox {
+    position: absolute;
+    bottom:180px;
+    right: 110px;
+    font-size: 39px;
+    font-family: 'Bungee Shade', cursive;
+    
+}
+
